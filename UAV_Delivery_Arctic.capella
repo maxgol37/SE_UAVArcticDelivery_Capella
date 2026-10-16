@@ -74,26 +74,32 @@
               id="70cae7d7-0a14-4f32-9f33-a9f64d948b91" name="Emergency report" target="#d3d9ff97-6166-4d49-898c-428a059ca650"
               source="#e68e383b-71d0-4a1f-bb58-94eca297152c"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="53f51f77-ea2b-4012-bc8e-692d148c6d4d" name="Treatment is planed"
-              target="#3f6b27b0-7d70-43e0-802d-01d36f1e89a3" source="#d3d9ff97-6166-4d49-898c-428a059ca650"/>
+              id="53f51f77-ea2b-4012-bc8e-692d148c6d4d" name="Medicine order" target="#3f6b27b0-7d70-43e0-802d-01d36f1e89a3"
+              source="#d3d9ff97-6166-4d49-898c-428a059ca650"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="d9e2f528-7701-4046-b0f0-b9bcdf808535" name="Cargo is ready" target="#ba7ca1af-50f9-4739-b6de-f922af5cdfa6"
+              id="d9e2f528-7701-4046-b0f0-b9bcdf808535" name="Cargo is ready" target="#ba4a1c99-1853-4c75-99cb-78e6e054d81a"
               source="#3f6b27b0-7d70-43e0-802d-01d36f1e89a3"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="0bc9b7c7-951f-4b59-9953-733f58c080e8" name="Delivery program is prepared"
-              target="#5cd69ce8-ff68-4fc2-8091-3190c90fa653" source="#ba7ca1af-50f9-4739-b6de-f922af5cdfa6"/>
+              id="0bc9b7c7-951f-4b59-9953-733f58c080e8" name="Approval request" target="#5cd69ce8-ff68-4fc2-8091-3190c90fa653"
+              source="#ba7ca1af-50f9-4739-b6de-f922af5cdfa6"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="c29230db-d819-4605-942a-ba765cd67d88" name="Approvel reseived" target="#ba4a1c99-1853-4c75-99cb-78e6e054d81a"
+              id="c29230db-d819-4605-942a-ba765cd67d88" name="Approvel received" target="#ba4a1c99-1853-4c75-99cb-78e6e054d81a"
               source="#5cd69ce8-ff68-4fc2-8091-3190c90fa653"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="b1cff560-6020-4c33-96f6-43d7ced23d2f" name="UAV reached destination"
-              target="#6c712cad-8bff-4ce4-bbbe-8b6c048ead2d" source="#ba4a1c99-1853-4c75-99cb-78e6e054d81a"/>
+              id="b1cff560-6020-4c33-96f6-43d7ced23d2f" name="Arrival notice" target="#6c712cad-8bff-4ce4-bbbe-8b6c048ead2d"
+              source="#ba4a1c99-1853-4c75-99cb-78e6e054d81a"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="056328fb-cc68-4428-ba16-9aa2ef633357" name="Successful delivery"
               target="#ac773580-9ddf-4b54-bc31-f72db9b9a49c" source="#6c712cad-8bff-4ce4-bbbe-8b6c048ead2d"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="bea0653c-069c-45a3-80e9-52261aeb2d02" name="Interaction 9" target="#30d6848c-30e2-442b-bfc8-b30c3ec6e3ed"
+              id="bea0653c-069c-45a3-80e9-52261aeb2d02" name="Medicine" target="#30d6848c-30e2-442b-bfc8-b30c3ec6e3ed"
               source="#ac773580-9ddf-4b54-bc31-f72db9b9a49c"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="fc832a91-ffb4-4494-a52e-0a85bc67e333" name="Delivery request" target="#ba7ca1af-50f9-4739-b6de-f922af5cdfa6"
+              source="#d3d9ff97-6166-4d49-898c-428a059ca650"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f6e81d76-9e89-4a1d-a632-d1a9cf5c61bc" name="Delivery plan" target="#ba4a1c99-1853-4c75-99cb-78e6e054d81a"
+              source="#ba7ca1af-50f9-4739-b6de-f922af5cdfa6"/>
         </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
