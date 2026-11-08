@@ -582,8 +582,6 @@
                 id="9cb89abc-1338-465a-b022-68a6cace1ce0" name="FIP 3"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="2f39bd82-0848-4476-b96f-bf9d3b61fe48" name="FOP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="f4981010-c248-40eb-9870-0d67c1c94d28" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="1368c0f2-e651-4c72-b1f1-af3aa9e3d696" name="Take updates from the mission control">
@@ -879,9 +877,6 @@
               id="d35d5d5e-82bc-400a-8059-62b0b4f89944" name="Secured package" target="#ae1e12ff-327f-4788-9ed2-1d817360553f"
               source="#5d4e8c2e-e3bf-4ebf-aeeb-5307e42cc7aa"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="cc75c758-9c7d-4998-a323-65cf62b66c6d" name="Route 0" target="#f9a8a298-e1ae-4e8f-832a-ebbcf00dd972"
-              source="#f4981010-c248-40eb-9870-0d67c1c94d28"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="700c2de0-ab4e-413f-8bd8-86ab48f98688" name="Ship position (live)"
               target="#9c372ca3-8a8e-4bda-bf26-7718fddd23ad" source="#f2a13330-705e-490a-b87e-1b444b5a3a93"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -921,7 +916,7 @@
               id="352b00f3-1220-4926-bb22-9280b6b7222d" name="Navigation signals"
               target="#96b4cb2f-dac9-4ec5-b15a-8841ed42de31" source="#f26d91b6-31ac-48be-bc7b-276d08b53fde"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="ce403335-d14a-4064-8736-6d67f0adb667" name="Launch" target="#1a0071d7-8c69-4733-a4ec-f75dca86e48b"
+              id="ce403335-d14a-4064-8736-6d67f0adb667" name="Launch (rout)" target="#1a0071d7-8c69-4733-a4ec-f75dca86e48b"
               source="#c158a6d6-f2f5-4e9f-bf6c-673c3f521980"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
@@ -1047,7 +1042,7 @@
                 id="55018477-be55-480b-aba7-5dcddc52be88" name="Secured package" kind="ASYNCHRONOUS_CALL"
                 sendingEnd="#97e77d7b-fa35-4601-a1b9-ee64a845e693" receivingEnd="#185fa997-edce-490b-be6b-a9bfe7c7ed95"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="cca513dc-92d1-4013-92af-49890ece52de" name="Launch" kind="ASYNCHRONOUS_CALL"
+                id="cca513dc-92d1-4013-92af-49890ece52de" name="Launch (rout)" kind="ASYNCHRONOUS_CALL"
                 sendingEnd="#5a58b266-8966-43ee-9d85-dab40ae60472" receivingEnd="#f00d40a1-301f-42a7-8af1-1eed62b2dba9"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
                 id="fdd4a902-188b-453d-8327-fc9e8784ec3d" name="Weather forecast"
@@ -2036,9 +2031,6 @@
               id="c138c846-ed69-4672-b9c8-4d96ec608011" targetElement="#4a2c27e4-1528-4be3-a2a0-a9a5b3802a1a"
               sourceElement="#6cc99059-39c4-4a2f-b0d1-e4272d4a94ae"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="96137522-387b-4dbe-8618-23e69470c164" targetElement="#20440769-b617-440b-9980-32003a7eaf79"
-              sourceElement="#6cc99059-39c4-4a2f-b0d1-e4272d4a94ae"/>
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="7c70eeae-81ee-42c7-82b4-e0c359069fea" targetElement="#1368c0f2-e651-4c72-b1f1-af3aa9e3d696"
               sourceElement="#6cc99059-39c4-4a2f-b0d1-e4272d4a94ae"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -2135,6 +2127,9 @@
               sourceElement="#551a7f43-61d0-4d5e-8484-8361b570ea2b"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="5b2bcfff-1888-47ba-951c-d79843e9631d" targetElement="#885f340c-31b6-4d7a-9ef5-c4e54de77e07"
+              sourceElement="#551a7f43-61d0-4d5e-8484-8361b570ea2b"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="96137522-387b-4dbe-8618-23e69470c164" targetElement="#20440769-b617-440b-9980-32003a7eaf79"
               sourceElement="#551a7f43-61d0-4d5e-8484-8361b570ea2b"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="c6d3e586-13d8-4ad9-ae88-dc9fec18050e" targetElement="#5ee2fabc-4bb9-4e89-bff5-27c4afa5b10a"
